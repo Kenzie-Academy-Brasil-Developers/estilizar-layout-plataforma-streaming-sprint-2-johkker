@@ -15,18 +15,33 @@ SUGESTÃO DE ESTRUTURAÇÃO BASE
 */
 
 /* VARIÁVEIS */
-:root{
-  
-}
+
 
 /*BODY*/
 	body{
-
+		margin: auto;
+		margin-top: 0;
+		font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+		background-color: #00002e;
 	}
 
 /*TOPO*/
 	header.topo{
-		
+		height: 100px;
+		background-color: #00002e;
+		width: 100%;
+		margin: auto;
+	}
+	.topo figure img {
+		height: 50px;
+		width: auto;
+	}
+	.topo figure figcaption {
+		display: none;
+	}
+	.topo figure {
+		margin-bottom: 0;
+		margin-top: 0;
 	}
 
 /*RODAPÉ*/
@@ -34,5 +49,88 @@ SUGESTÃO DE ESTRUTURAÇÃO BASE
 
 /*PÁGINA INICIAL*/
 	div.pg-home{
+		background-color: #00002e;
+		color: white;
+	}
+	.pg-home section header {
+		text-align: center;
+		color: white;
+
+	}
+	.pg-home section header h2 {
+		margin-top: 0;
+		font-size: 36px;
+	}
+	.pg-home ul {
+		padding-top: 50px;
+		width: 429px;
+		list-style: none;
+		padding-left: 0;
+		display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+		align-content: space-between;
+		justify-content: space-between;
+		margin: auto;
+		box-sizing: border-box;
 		
+	}
+	.pg-home ul li figure img {
+		width: 186px;
+
+	}
+	.pg-home ul li figure {
+		width: 186px;
+		margin: 0;
+	}
+	.pg-home ul li h3 {
+		font-weight: 300;
+	}
+	
+
+	.pg-home ul li figure img:hover {
+		border: 2px solid white;
+		transition-duration: 0.2s;
+		cursor: pointer;		
+	}
+	.pg-home ul li figure figcaption {
+		display: none;
+	}
+	.pg-home ul li {
+		width: 186px;
+		display: flex;
+		flex-direction: column;
+		text-align: center;
+
+	}
+	.pg-home ul li:hover {
+		font-weight: bolder;
+	}
+	
+	footer {
+		text-align: center;
+		height: 100px;
+		padding-top: 50px;
+	}
+	footer button {
+		background-color: #00002e;
+		font-size: 18px;
+		color: white;
+		padding: 5px;
+		width: 186px;
+		border: 1px solid white;
+		border-radius: 2px 2px 2px 2px;
+	}
+	footer button:hover {
+		cursor: pointer;
+	}
+
+	@media screen and (min-width: 880px) {
+		.pg-home ul {
+			width: 858px;
+		}	
+		.pg-home section header h2 {
+			font-size: 60px;
+			padding-top: 50px;
+		}	
 	}
